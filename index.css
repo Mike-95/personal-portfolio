@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+head {
+  display: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.nav {
+  background-color: rgb(151, 29, 29);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 0px;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+li {
+  display: list-item;
+}
+
+.nav-list a {
+  display: block;
+  font-size: 1.1rem;
+  padding: 2rem;
+}
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+h1,
+h2 {
+  text-align: center;
+  font-family: "Raleway", sans-ser;
+  font-weight: 700;
+}
+
+.welcome-section > p {
+  color: rgb(151, 29, 29);
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+}
+
+section {
+  display: block;
+  unicode-bidi: isolate;
+}
+
+.projects-section {
+  background: rgb(3, 26, 68);
+  text-align: center;
+  padding: 10rem 2rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project {
+  box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 2px;
+  border-radius: 2px;
+}
+
+img {
+  display: block;
+}
+.project-image {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+.btn-show-all {
+  font-size: 2rem;
+  transition: background 0.3s ease-out;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.btn-show-all > i {
+  margin-left: 10px;
+  transform: translateX(0);
+  transition: transform 0.3s ease-out;
+}
+
+.fa-chevron-right:before {
+  content: "\f054";
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.fa-facebook-square:before {
+  content: "\f082";
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+footer > p {
+  margin: 2rem;
+}
+
+
+footer i{
+    vertical-align: middle;
+}
+
